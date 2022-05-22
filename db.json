@@ -23,28 +23,55 @@
       "password": "$2a$10$di6wsDYCqODRpa3yaO.BPOrEaOjEGr8TFPiqCIzTaeeAgeWjrDfsm",
       "name": "ciao",
       "id": 4
+    },
+    {
+      "email": "a@a.it",
+      "password": "$2a$10$Kss2wbdzMuUYkBFRgxYXTOdJ9kF4r/8TTVmfkK2Ak4IRyii/DwETq",
+      "name": "aa",
+      "id": 5
+    },
+    {
+      "email": "groot@ciao.it",
+      "password": "$2a$10$uH14tHNGMkNAwo41cN5wrealBA2RDX5WhFN6n6YAHHs/Hfjwg/rQO",
+      "name": "zophirel",
+      "id": 6
     }
   ],
   "favorites": [
     {
-      "userId": 1,
+      "movieId": 578701,
+      "userId": 6,
+      "id": 1
+    },
+    {
       "movieId": 460465,
+      "userId": 6,
+      "id": 2
+    },
+    {
+      "movieId": 804435,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "movieId": 399566,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "movieId": 615457,
+      "userId": 1,
       "id": 5
     },
     {
-      "movieId": 567189,
+      "movieId": 573680,
       "userId": 1,
       "id": 6
     },
     {
-      "movieId": 567189,
-      "userId": 1,
+      "movieId": 399566,
+      "userId": 3,
       "id": 7
-    },
-    {
-      "movieId": 632357,
-      "userId": 1,
-      "id": 9
     }
   ],
   "genres": [

@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { AuthService } from 'src/app/auth/auth.service';
+import { AuthData } from 'src/app/models/authdata';
 import { Movie } from 'src/app/models/movie';
 import { MoviesService } from './movies.service';
 
@@ -24,9 +26,8 @@ export class MoviesComponent implements OnInit {
   })
 
   this.sub=this.movieSrv.getFavorites().subscribe(res=>{
-   this.favorites=res
-   console.log(this.favorites)
-   this.moviesData= this.movies.map((movie)=>({
+    this.favorites=res
+    this.moviesData= this.movies.map((movie)=>({
       data : movie,
       favLoading:false,
       favId:this.favorites.find((fav)=>fav.movieId == movie.id)?.id

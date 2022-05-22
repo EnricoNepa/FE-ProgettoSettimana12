@@ -41,8 +41,13 @@ export class AuthService {
   }
 
   signUp(data: { name: string; email: string; password: string }) {
-    return this.http.post(`${this.URL}/register`, data),
-    throwError(() => alert("⚠️ COMPILARE CORRETTAMENTE I CAMPI ⚠️"))
+    let signup:any
+    try{
+       signup = this.http.post(`${this.URL}/register`, data)
+    }
+    catch(err){
+      throwError(() => alert(err))
+    }return signup
   }
 
   logout() {
